@@ -75,7 +75,7 @@ def main():
     if not args.keywords:
         search_keywords = ["toilet", "paper"]
     else:
-        search_keywords = args.search_keywords.split(" ")
+        search_keywords = args.keywords.split(" ")
     if not args.brands:
         brands = ["Quilton"]
     else:
