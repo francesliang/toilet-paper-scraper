@@ -43,7 +43,7 @@ pip3 install -r requirements.txt
 1. To run the scraper once, under `<project_root_directory>`, example:
 
 ```
-python3 amazong/scrape.py --keywords "toilet paper" --brands "Quilton"
+python3 amazon/scrape.py --keywords "toilet paper" --brands "Quilton"
 ```
 
 2. To setup a cron job to run the scraper periodically, please refer to the crontab example file `crontab_example`
