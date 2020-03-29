@@ -4,6 +4,11 @@
 In response to the unusual time in 2020 with COVID-19 pandemic haunting the world, everyone has the responsibility to help ease the darkness in their own way. I chose to tackle the issue on how to deal with supply shortage of toilet paper by open sourcing this project to a broader audience needed. 
 
 
+### Overview
+
+Scripts in this project scan the search results of online sources for particular keywords (such as "toilet paper") and return results with specified brands. If matched results are found, there is a voice alert to inform users to take appropriate actions. 
+
+
 ### Prerequisite
 
 1. Python3
@@ -38,7 +43,7 @@ pip3 install -r requirements.txt
 1. To run the scraper once, under `<project_root_directory>`, example:
 
 ```
-python3 aws/scrape.py --keywords "toilet paper" --brands "Quilton"
+python3 amazong/scrape.py --keywords "toilet paper" --brands "Quilton"
 ```
 
 2. To setup a cron job to run the scraper periodically, please refer to the crontab example file `crontab_example`
