@@ -64,7 +64,7 @@ def alert(message):
 
 def parse_args():
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument("--keywords", help="Keywords to search on AWS AU; seperated by space")
+    arg_parser.add_argument("--keywords", help="Keywords to search on Amazon AU; seperated by space")
     arg_parser.add_argument("--brands", help="Brands to focus on search results; seperated by space")
     args = arg_parser.parse_args()
     return args
