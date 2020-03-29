@@ -64,22 +64,16 @@ def alert(message):
 
 def parse_args():
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument("--keywords", help="Keywords to search on Amazon AU; seperated by space")
-    arg_parser.add_argument("--brands", help="Brands to focus on search results; seperated by space")
+    arg_parser.add_argument("--keywords", default="toilet paper", help="Keywords to search on Amazon AU; separated by space")
+    arg_parser.add_argument("--brands", default="Quilton", help="Brands to focus on search results; separated by space")
     args = arg_parser.parse_args()
     return args
 
 
 def main():
     args = parse_args()
-    if not args.keywords:
-        search_keywords = ["toilet", "paper"]
-    else:
-        search_keywords = args.keywords.split(" ")
-    if not args.brands:
-        brands = ["Quilton"]
-    else:
-        brands = args.brands.split(" ")
+    search_keywords = args.keywords.split(" ")
+    brands = args.brands.split(" ")
     is_found, results = run(search_keywords, brands)
 
 
